@@ -1,0 +1,8 @@
+python train.py     
+--mode real --model googlenet     
+--episodes 5000 --batch-episodes 16 --mini-batch-size 512     
+--ppo-epochs 6 --lr 1e-4     
+--entropy-coef 0.01 --entropy-coef-end 0.0003     
+--hidden 256 --emb 256 --heads 8     
+--bc-episodes 0 --iters 500 --warmups 20     
+--seed 42
