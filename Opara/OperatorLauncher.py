@@ -5,6 +5,7 @@ from Opara import ModelProfiler
 from collections import deque
 import os
 path = os.path.abspath(os.path.dirname(__file__))
+os.makedirs(path + '/profile_result', exist_ok=True)
 output_file_path = path + '/profile_result/output.txt'
 output_file = open(output_file_path, "w")
 
